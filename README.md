@@ -1,5 +1,6 @@
-# Application for booking laundry
 > Authors: David Melamed, Majbrit Schöttner
+
+# Application for booking laundry
 ## The basic idea
 A website that can be visited to reserve machines of any kind for yourself.
 ### The current solution
