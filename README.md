@@ -27,6 +27,6 @@ The website will be redesigned for our website. The design will have a separate 
  
 ### Our techniques used
 For the realisation of our idea, the web app is programmed as a single-page application.
-- Front-end: The framework React is used to build the framework of the website. The visual components are implemented using the CSS framework MUI (Material UI).
+- Front-end: The framework React is used to build the framework of the website. The visual components are implemented using the CSS framework of React it self.
 - Back-End: Routing, server and retrieval of information is done with the help of the ExpressJS framework. The information of each reservation is stored in a simple MariaDB database.
 - Other technologies: Docker is used for the development and for testing the interaction of the application, on a machine. 
