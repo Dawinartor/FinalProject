@@ -11,7 +11,7 @@ import Calendar from 'react-calendar';
 
   function ShowCalendar() {
     const [date, setDate] = useState(new Date());
-
+    
     /*
     var date2 = new Date("2016-01-04 10:34:23");
     var date3 = new Date();
@@ -24,7 +24,8 @@ import Calendar from 'react-calendar';
         <p>{date4.toTimeString()}</p>
         <p>{date4.getDate().toString()}</p>
         <p>{date4.getFullYear().toString()}</p>
-        <p>{date4.getDay().toString()}</p>*/
+        <p>{date4.getDay().toString()}</p>*
+    */
 
     console.log("ShowCalendar");
     console.log(date);
