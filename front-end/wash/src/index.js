@@ -8,6 +8,9 @@ import './calendar.css';
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 
+var selectedPerson = [];
+var selectedDate = [];
+var selectedTime = [];
 
   function ShowCalendar() {
     const [date, setDate] = useState(new Date());
@@ -122,6 +125,9 @@ import Calendar from 'react-calendar';
         <div className="around">
           <p>Choose a time and a machine!</p>
           <TimeTable times={this.props.times} />
+          <button className="submit" >
+            Submit
+          </button>
         </div>
       );
     }
@@ -144,17 +150,65 @@ import Calendar from 'react-calendar';
     {time: '8:00pm - 9:00pm ', machine1: true, machine2: true, machine3: true},
     {time: '9:00pm - 10:00pm ', machine1: true, machine2: true, machine3: true},
     {time: '10:00pm - 11:00pm ', machine1: true, machine2: true, machine3: true},
-    
-
-
   ];
 
   class SignUp extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        firstname: '',
+        lastname: '',
+        email: '',
+        roomnumber: ''
+      };
+  
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
+    }
+  
+    handleChange(event) {
+      this.setState({value: event.target.value});
+      const target = event.target;
+      const value = target.value;
+      const name = target.name;
+
+      this.setState({
+        [name]: value
+      });
+    }
+    handleSubmit(event) {
+      alert('Machine is booked by '+ this.state.firstname + ' ' + this.state.lastname);
+      selectedPerson = [this.state];
+      console.log(selectedPerson);
+      event.preventDefault();
+    }
     render() {
-      
       return (
         <div className="around">
           <p>Sign up!</p>
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              Firstname: 
+              <input type="text" name="firstname" value={this.state.firstname} onChange={this.handleChange}/>
+            </label>
+            <br />
+            <label>
+              Lastname: 
+              <input type="text" name="lastname" value={this.state.lastname} onChange={this.handleChange}/>
+            </label>
+            <br />
+            <label>
+              E-Mail: 
+              <input type="text" name="email" value={this.state.email} onChange={this.handleChange}/>
+            </label>
+            <br />
+            <label>
+              Room Number: 
+              <input type="text" name="roomnumber" value={this.state.roomnumber} onChange={this.handleChange}/>
+            </label>
+            <br />
+            <input type="submit" value="Submit" className="submit" />
+          </form>
         </div>
       );
     }
