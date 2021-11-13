@@ -73,6 +73,7 @@ h1 {
   position: relative;
   top: 10px; 
   left: 0px;
+  margin-bottom: 100px;
 }
 .submit:hover {
   top: 15px;
@@ -135,5 +136,14 @@ td {
 
 
 .around {
-  margin-bottom: 100px;
+  margin-bottom: 25px;
+}
+
+.label {
+  position: relative;
+}
+
+.labelInput {
+  position: absolute;
+  left: 200px;
 }
