@@ -1,0 +1,153 @@
+
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("images/washingMachineBigger.png");
+  background-size: 15%;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*
+button {
+  color: black;
+  background-color: #ffe604;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative; 
+}*/
+
+h1 {
+  font-size: 75px;
+  font-family: Impact, fantasy;
+}
+
+.button {
+  color: black;
+  background-color: #ffe604;
+  font-size: 15px;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  top: 0px; 
+  left: 0px;
+  margin-bottom: 3px;
+}
+.button:hover {
+  top: 5px;
+  left: 5px;
+  box-shadow: 0px 0px 0px 0px;
+}
+.button:focus {
+  top: 5px;
+  left: 5px;
+  box-shadow: 0px 0px 0px 0px;
+  background-color: black;
+  color: #ffe604;
+  border-color: black;
+}
+
+.submit {
+  color: black;
+  background-color: #ffe604;
+  font-size: 20px;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  top: 10px; 
+  left: 0px;
+  margin-bottom: 100px;
+}
+.submit:hover {
+  top: 15px;
+  left: 5px;
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.laundry-calendar {
+  width: 100%;
+  /*background-color: deeppink;*/
+}
+
+/*
+.calendar-container {
+  width: 100%;
+  background-color: darkolivegreen;
+}
+*/
+.text-calendar {
+  font-size: 30px;
+  font-family: Impact, fantasy;
+}
+
+/* Time */
+tr {
+
+  background-color: #ffe604;
+}
+
+table {
+  background-color: black;
+  width: 100%;
+}
+
+th {
+  background-color: black;
+  color: #ffe604;
+}
+
+td {
+  border: 2px solid;
+  padding: 0.25em 0.5em;
+}
+
+#root {
+  /*background-color: aqua;*/
+}
+
+.laundry {
+  /*background-color: brown;*/
+}
+
+.laundry-time {
+  /*background-color: chartreuse;*/
+}
+
+.bookedout {
+  font-size: 14px;
+}
+
+
+.around {
+  margin-bottom: 25px;
+}
+
+.label {
+  position: relative;
+}
+
+.labelInput {
+  position: absolute;
+  left: 200px;
+}
